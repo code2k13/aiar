@@ -7,12 +7,9 @@
 
 <body style='margin: 0px; overflow: hidden;'>
   <a-scene embedded arjs>
-    <a-entity position='0 0.5 0'>
-      <a-light type="directional" position="-5 5 5" target="#m" castShadow="true"></a-light>
-      <a-light type="directional" position="5 -5 5" target="#m" castShadow="true"></a-light>
-      <a-light type="directional" position="5 5 -5" target="#m" castShadow="true"></a-light>
-      <a-gltf-model src="model.gltf" scale="2 2 2" id='m' receiveShadow="true>
-          <a-entity geometry=" primitive: box" material="metalness: 1; roughness: 0; color:yellow"></a-entity>
+    <a-entity position='0 0.5 0'>    
+      <a-gltf-model src="model.gltf" scale="2 2 2" id='m'   receiveShadow="true>
+          <a-entity geometry=" primitive: box"></a-entity>
     </a-gltf-model>
     </a-entity>
     <a-marker-camera preset='hiro'></a-marker-camera>
